@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Workhorse Africa - Job Board</title>
+  <meta name="description" content="Workhorse - The best job board for South Africa, Nigeria, Ghana, Botswana, Swaziland, Kenya, Zimbabwe, and Zambia. Aggregated jobs scraped from LinkedIn.">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,500&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <a href="/" class="logo">
+        <img src="https://workhorse.africa/logo.svg" alt="Workhorse Logo" height="32"/>
+        <span>Workhorse</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#jobs">Jobs</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container">
+      <h1>Find Top Jobs in Africa</h1>
+      <p class="subtitle">
+        Aggregated &amp; curated job listings from <strong>LinkedIn</strong> for South Africa, Nigeria, Ghana, Botswana, Swaziland, Kenya, Zimbabwe and Zambia.
+      </p>
+      <form id="search-form">
+        <input type="text" placeholder="Search job title, keywords, or company…" id="search" autocomplete="off">
+        <select id="country">
+          <option value="">All Countries</option>
+          <option value="South Africa">South Africa</option>
+          <option value="Nigeria">Nigeria</option>
+          <option value="Ghana">Ghana</option>
+          <option value="Botswana">Botswana</option>
+          <option value="Swaziland">Swaziland</option>
+          <option value="Kenya">Kenya</option>
+          <option value="Zimbabwe">Zimbabwe</option>
+          <option value="Zambia">Zambia</option>
+        </select>
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </section>
+  <main>
+    <div class="container">
+      <h2 id="jobs">Latest Jobs</h2>
+      <div id="job-listings" class="job-listings">
+        <!-- Jobs will be injected here by script.js -->
+      </div>
+      <div id="no-results" class="no-results" style="display: none;">No jobs found for your search.</div>
+    </div>
+  </main>
+  <section class="about" id="about">
+    <div class="container">
+      <h3>About Workhorse</h3>
+      <p>
+        Workhorse aggregates job opportunities from LinkedIn and other platforms, focusing on candidates in key African countries. Our mission is to help you discover the best roles in South Africa, Nigeria, Ghana, Botswana, Swaziland, Kenya, Zimbabwe and Zambia—faster.
+      </p>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <span>&copy; 2025 Workhorse Africa. All rights reserved.</span>
+      <span class="footer-links">
+        <a href="mailto:support@workhorse.africa">Contact</a>
+      </span>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
